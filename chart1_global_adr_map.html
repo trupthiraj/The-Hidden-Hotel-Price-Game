@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f31b19d19297e180b3120add8496ab9e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f31b19d19297e180b3120add8496ab9e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f31b19d19297e180b3120add8496ab9e = L.map(
+                "map_f31b19d19297e180b3120add8496ab9e",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1c2dafdf0b5ec7cd121fc19d3eedec7e = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_1c2dafdf0b5ec7cd121fc19d3eedec7e.addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+            var circle_marker_49d1e0db1f5323c40b8cfbf2405639ed = L.circleMarker(
+                [-11.2027, 17.8739],
+                {"bubblingMouseEvents": true, "color": "#524bb6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#524bb6ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_4cb958ef350559c2fdb1c4c44877430f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0777537eae0b2c0ad8525f100d1a3c47 = $(`<div id="html_0777537eae0b2c0ad8525f100d1a3c47" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>AGO</b><br>                 Avg ADR: <b>£116</b><br>                 Bookings: <b>149</b>                 </div>                 </div>`)[0];
+                popup_4cb958ef350559c2fdb1c4c44877430f.setContent(html_0777537eae0b2c0ad8525f100d1a3c47);
+            
+        
+
+        circle_marker_49d1e0db1f5323c40b8cfbf2405639ed.bindPopup(popup_4cb958ef350559c2fdb1c4c44877430f)
+        ;
+
+        
+    
+    
+            var circle_marker_63c44686bae5907d55c95c35876ebedd = L.circleMarker(
+                [-38.4161, -63.6167],
+                {"bubblingMouseEvents": true, "color": "#4959abff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4959abff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_85f3eef3b2fe3fe96f4d635f672f8f6a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5bbf03daa290d5ae02a77a9e29b741dd = $(`<div id="html_5bbf03daa290d5ae02a77a9e29b741dd" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>ARG</b><br>                 Avg ADR: <b>£114</b><br>                 Bookings: <b>160</b>                 </div>                 </div>`)[0];
+                popup_85f3eef3b2fe3fe96f4d635f672f8f6a.setContent(html_5bbf03daa290d5ae02a77a9e29b741dd);
+            
+        
+
+        circle_marker_63c44686bae5907d55c95c35876ebedd.bindPopup(popup_85f3eef3b2fe3fe96f4d635f672f8f6a)
+        ;
+
+        
+    
+    
+            var circle_marker_58fa739b57dbe8e873fee54c91fc03d4 = L.circleMarker(
+                [-25.2744, 133.7751],
+                {"bubblingMouseEvents": true, "color": "#514db5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#514db5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_954dfce4416ffafab4195a8f38b0f351 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_19206c3bcae2333e4768e7d8fed51707 = $(`<div id="html_19206c3bcae2333e4768e7d8fed51707" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>AUS</b><br>                 Avg ADR: <b>£116</b><br>                 Bookings: <b>318</b>                 </div>                 </div>`)[0];
+                popup_954dfce4416ffafab4195a8f38b0f351.setContent(html_19206c3bcae2333e4768e7d8fed51707);
+            
+        
+
+        circle_marker_58fa739b57dbe8e873fee54c91fc03d4.bindPopup(popup_954dfce4416ffafab4195a8f38b0f351)
+        ;
+
+        
+    
+    
+            var circle_marker_5fe2fc06aea585f1dab8a72971670202 = L.circleMarker(
+                [47.5162, 14.5501],
+                {"bubblingMouseEvents": true, "color": "#1d9e75ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1d9e75ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_2d8c48f34fb056badcbe03b3fc44ceb2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_cd3a0ea4fdeb163c015d460fcc89a28c = $(`<div id="html_cd3a0ea4fdeb163c015d460fcc89a28c" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>AUT</b><br>                 Avg ADR: <b>£104</b><br>                 Bookings: <b>1,027</b>                 </div>                 </div>`)[0];
+                popup_2d8c48f34fb056badcbe03b3fc44ceb2.setContent(html_cd3a0ea4fdeb163c015d460fcc89a28c);
+            
+        
+
+        circle_marker_5fe2fc06aea585f1dab8a72971670202.bindPopup(popup_2d8c48f34fb056badcbe03b3fc44ceb2)
+        ;
+
+        
+    
+    
+            var circle_marker_23b710c595b5c8105dad0f0b222714ce = L.circleMarker(
+                [50.5039, 4.4699],
+                {"bubblingMouseEvents": true, "color": "#3b6f9aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3b6f9aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_f9a239327e42d094831657426e49a5a7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_db3d44a33c6c772577afd33118c295bb = $(`<div id="html_db3d44a33c6c772577afd33118c295bb" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>BEL</b><br>                 Avg ADR: <b>£111</b><br>                 Bookings: <b>1,851</b>                 </div>                 </div>`)[0];
+                popup_f9a239327e42d094831657426e49a5a7.setContent(html_db3d44a33c6c772577afd33118c295bb);
+            
+        
+
+        circle_marker_23b710c595b5c8105dad0f0b222714ce.bindPopup(popup_f9a239327e42d094831657426e49a5a7)
+        ;
+
+        
+    
+    
+            var circle_marker_410d11e46e984031dd810dfffe9efbbb = L.circleMarker(
+                [-14.235, -51.9253],
+                {"bubblingMouseEvents": true, "color": "#30808cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#30808cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_02d9cc05662224755f54656c1683f21a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c1728643186fd5caee267524f701624c = $(`<div id="html_c1728643186fd5caee267524f701624c" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>BRA</b><br>                 Avg ADR: <b>£108</b><br>                 Bookings: <b>1,378</b>                 </div>                 </div>`)[0];
+                popup_02d9cc05662224755f54656c1683f21a.setContent(html_c1728643186fd5caee267524f701624c);
+            
+        
+
+        circle_marker_410d11e46e984031dd810dfffe9efbbb.bindPopup(popup_02d9cc05662224755f54656c1683f21a)
+        ;
+
+        
+    
+    
+            var circle_marker_30f2f2a27933aa1fa3bfb39257a09826 = L.circleMarker(
+                [46.8182, 8.2275],
+                {"bubblingMouseEvents": true, "color": "#5c4ab3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#5c4ab3ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_3b0de9a3650e6f0f53cb6a00e0281aad = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_197351379b489c4d6a40cb9b3f6966a7 = $(`<div id="html_197351379b489c4d6a40cb9b3f6966a7" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>CHE</b><br>                 Avg ADR: <b>£117</b><br>                 Bookings: <b>1,293</b>                 </div>                 </div>`)[0];
+                popup_3b0de9a3650e6f0f53cb6a00e0281aad.setContent(html_197351379b489c4d6a40cb9b3f6966a7);
+            
+        
+
+        circle_marker_30f2f2a27933aa1fa3bfb39257a09826.bindPopup(popup_3b0de9a3650e6f0f53cb6a00e0281aad)
+        ;
+
+        
+    
+    
+            var circle_marker_966698c3e55673518f9de9226f8f9e38 = L.circleMarker(
+                [35.8617, 104.1954],
+                {"bubblingMouseEvents": true, "color": "#24927eff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#24927eff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_2ae7f43f5711d12c06416dae2de6e43a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_65dc4add9b32cc478c0df55e7cefdd00 = $(`<div id="html_65dc4add9b32cc478c0df55e7cefdd00" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>CHN</b><br>                 Avg ADR: <b>£105</b><br>                 Bookings: <b>534</b>                 </div>                 </div>`)[0];
+                popup_2ae7f43f5711d12c06416dae2de6e43a.setContent(html_65dc4add9b32cc478c0df55e7cefdd00);
+            
+        
+
+        circle_marker_966698c3e55673518f9de9226f8f9e38.bindPopup(popup_2ae7f43f5711d12c06416dae2de6e43a)
+        ;
+
+        
+    
+    
+            var circle_marker_bb20ec0bb91d2e2646633761d5062d68 = L.circleMarker(
+                [49.8175, 15.473],
+                {"bubblingMouseEvents": true, "color": "#2f818cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2f818cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_eca262d8b2dd41e791a105f7a8c2214c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fbaa91868fea37f51b622d5a3a26bc1b = $(`<div id="html_fbaa91868fea37f51b622d5a3a26bc1b" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>CZE</b><br>                 Avg ADR: <b>£108</b><br>                 Bookings: <b>133</b>                 </div>                 </div>`)[0];
+                popup_eca262d8b2dd41e791a105f7a8c2214c.setContent(html_fbaa91868fea37f51b622d5a3a26bc1b);
+            
+        
+
+        circle_marker_bb20ec0bb91d2e2646633761d5062d68.bindPopup(popup_eca262d8b2dd41e791a105f7a8c2214c)
+        ;
+
+        
+    
+    
+            var circle_marker_499212cf450b14df4947f7abcfc6caec = L.circleMarker(
+                [51.1657, 10.4515],
+                {"bubblingMouseEvents": true, "color": "#2ea780ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2ea780ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.06, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_b6c8b3f8ea8d4a521e12f95ce39884d8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_583f128d7c152af165c7a7042804a944 = $(`<div id="html_583f128d7c152af165c7a7042804a944" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>DEU</b><br>                 Avg ADR: <b>£102</b><br>                 Bookings: <b>6,024</b>                 </div>                 </div>`)[0];
+                popup_b6c8b3f8ea8d4a521e12f95ce39884d8.setContent(html_583f128d7c152af165c7a7042804a944);
+            
+        
+
+        circle_marker_499212cf450b14df4947f7abcfc6caec.bindPopup(popup_b6c8b3f8ea8d4a521e12f95ce39884d8)
+        ;
+
+        
+    
+    
+            var circle_marker_69234352558e7e5dff6ac0afbdbe1a33 = L.circleMarker(
+                [56.2639, 9.5018],
+                {"bubblingMouseEvents": true, "color": "#524bb6ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#524bb6ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_dfe9b272a52814fd4ee4c921b43d471f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_5ff060eaba79190c55f16fafe1f34586 = $(`<div id="html_5ff060eaba79190c55f16fafe1f34586" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>DNK</b><br>                 Avg ADR: <b>£116</b><br>                 Bookings: <b>324</b>                 </div>                 </div>`)[0];
+                popup_dfe9b272a52814fd4ee4c921b43d471f.setContent(html_5ff060eaba79190c55f16fafe1f34586);
+            
+        
+
+        circle_marker_69234352558e7e5dff6ac0afbdbe1a33.bindPopup(popup_dfe9b272a52814fd4ee4c921b43d471f)
+        ;
+
+        
+    
+    
+            var circle_marker_07f95aa51cfa93d1a76792eb1777ca8e = L.circleMarker(
+                [40.4637, -3.7492],
+                {"bubblingMouseEvents": true, "color": "#357893ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#357893ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.59, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_06c88c829cc9a631dadc29e8a600fcda = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0da6ad36f7eac15293bc7cb53ade2ca7 = $(`<div id="html_0da6ad36f7eac15293bc7cb53ade2ca7" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>ESP</b><br>                 Avg ADR: <b>£109</b><br>                 Bookings: <b>6,236</b>                 </div>                 </div>`)[0];
+                popup_06c88c829cc9a631dadc29e8a600fcda.setContent(html_0da6ad36f7eac15293bc7cb53ade2ca7);
+            
+        
+
+        circle_marker_07f95aa51cfa93d1a76792eb1777ca8e.bindPopup(popup_06c88c829cc9a631dadc29e8a600fcda)
+        ;
+
+        
+    
+    
+            var circle_marker_073dc57629bc39a6e8c6610cb63d3911 = L.circleMarker(
+                [46.2276, 2.2137],
+                {"bubblingMouseEvents": true, "color": "#268f81ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#268f81ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 21.0025, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_cffa7e9eb1f0b8ecffbb2ef11847bb1b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f6a03187f8ba5642668d2291282d3e8c = $(`<div id="html_f6a03187f8ba5642668d2291282d3e8c" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>FRA</b><br>                 Avg ADR: <b>£106</b><br>                 Bookings: <b>8,401</b>                 </div>                 </div>`)[0];
+                popup_cffa7e9eb1f0b8ecffbb2ef11847bb1b.setContent(html_f6a03187f8ba5642668d2291282d3e8c);
+            
+        
+
+        circle_marker_073dc57629bc39a6e8c6610cb63d3911.bindPopup(popup_cffa7e9eb1f0b8ecffbb2ef11847bb1b)
+        ;
+
+        
+    
+    
+            var circle_marker_a5abe8ae3faf4c0702a0a3d6c73c0b75 = L.circleMarker(
+                [55.3781, -3.436],
+                {"bubblingMouseEvents": true, "color": "#9fe1cbff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#9fe1cbff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 23.96, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_b18ffe49f5d2864bc21af3659cb767ce = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f5097dc1413608be5c8276f915e7b5f4 = $(`<div id="html_f5097dc1413608be5c8276f915e7b5f4" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>GBR</b><br>                 Avg ADR: <b>£91</b><br>                 Bookings: <b>9,584</b>                 </div>                 </div>`)[0];
+                popup_b18ffe49f5d2864bc21af3659cb767ce.setContent(html_f5097dc1413608be5c8276f915e7b5f4);
+            
+        
+
+        circle_marker_a5abe8ae3faf4c0702a0a3d6c73c0b75.bindPopup(popup_b18ffe49f5d2864bc21af3659cb767ce)
+        ;
+
+        
+    
+    
+            var circle_marker_85b98c16074b5f15b9731d45b1fa54ae = L.circleMarker(
+                [39.0742, 21.8243],
+                {"bubblingMouseEvents": true, "color": "#347992ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#347992ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_cdedbae1e82efddb96691165cee5ee25 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_559b05cb41042d5ec8c0bf520cba08bd = $(`<div id="html_559b05cb41042d5ec8c0bf520cba08bd" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>GRC</b><br>                 Avg ADR: <b>£109</b><br>                 Bookings: <b>93</b>                 </div>                 </div>`)[0];
+                popup_cdedbae1e82efddb96691165cee5ee25.setContent(html_559b05cb41042d5ec8c0bf520cba08bd);
+            
+        
+
+        circle_marker_85b98c16074b5f15b9731d45b1fa54ae.bindPopup(popup_cdedbae1e82efddb96691165cee5ee25)
+        ;
+
+        
+    
+    
+            var circle_marker_b16b628b3108e64525bc60558451db6c = L.circleMarker(
+                [47.1625, 19.5033],
+                {"bubblingMouseEvents": true, "color": "#485aaaff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#485aaaff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_c505f0afe8563a416d4be1e24b941938 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_137b6f5b23bbb725abde6d2b033db098 = $(`<div id="html_137b6f5b23bbb725abde6d2b033db098" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>HUN</b><br>                 Avg ADR: <b>£114</b><br>                 Bookings: <b>151</b>                 </div>                 </div>`)[0];
+                popup_c505f0afe8563a416d4be1e24b941938.setContent(html_137b6f5b23bbb725abde6d2b033db098);
+            
+        
+
+        circle_marker_b16b628b3108e64525bc60558451db6c.bindPopup(popup_c505f0afe8563a416d4be1e24b941938)
+        ;
+
+        
+    
+    
+            var circle_marker_8c78e9c36da273557f799533da1ab233 = L.circleMarker(
+                [53.1424, -7.6921],
+                {"bubblingMouseEvents": true, "color": "#7aceb3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7aceb3ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.325, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_a6fb5f28f3bcb73a6a664e0dcd5d317f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8685767f669df01cb5a9fd1ad7e2d1a0 = $(`<div id="html_8685767f669df01cb5a9fd1ad7e2d1a0" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>IRL</b><br>                 Avg ADR: <b>£94</b><br>                 Bookings: <b>2,530</b>                 </div>                 </div>`)[0];
+                popup_a6fb5f28f3bcb73a6a664e0dcd5d317f.setContent(html_8685767f669df01cb5a9fd1ad7e2d1a0);
+            
+        
+
+        circle_marker_8c78e9c36da273557f799533da1ab233.bindPopup(popup_a6fb5f28f3bcb73a6a664e0dcd5d317f)
+        ;
+
+        
+    
+    
+            var circle_marker_cb7602b3e62fc02fb25f73044fe743c2 = L.circleMarker(
+                [31.0461, 34.8516],
+                {"bubblingMouseEvents": true, "color": "#1f9a78ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#1f9a78ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_e7d336082e3d6fb02529a38fba07ab23 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_563a6ed5f65afb4e985ed4991f5120df = $(`<div id="html_563a6ed5f65afb4e985ed4991f5120df" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>ISR</b><br>                 Avg ADR: <b>£104</b><br>                 Bookings: <b>496</b>                 </div>                 </div>`)[0];
+                popup_e7d336082e3d6fb02529a38fba07ab23.setContent(html_563a6ed5f65afb4e985ed4991f5120df);
+            
+        
+
+        circle_marker_cb7602b3e62fc02fb25f73044fe743c2.bindPopup(popup_e7d336082e3d6fb02529a38fba07ab23)
+        ;
+
+        
+    
+    
+            var circle_marker_21b085334806e6f525d84d7a9e9283c7 = L.circleMarker(
+                [41.8719, 12.5674],
+                {"bubblingMouseEvents": true, "color": "#3c6e9bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3c6e9bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.0225, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_2ef2fa9ab60e1dab45246bb2d4f16568 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b689df31d4b2def890b89d614fd23827 = $(`<div id="html_b689df31d4b2def890b89d614fd23827" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>ITA</b><br>                 Avg ADR: <b>£111</b><br>                 Bookings: <b>2,409</b>                 </div>                 </div>`)[0];
+                popup_2ef2fa9ab60e1dab45246bb2d4f16568.setContent(html_b689df31d4b2def890b89d614fd23827);
+            
+        
+
+        circle_marker_21b085334806e6f525d84d7a9e9283c7.bindPopup(popup_2ef2fa9ab60e1dab45246bb2d4f16568)
+        ;
+
+        
+    
+    
+            var circle_marker_9952c38c4cf7eaf0f957409af2d4c70b = L.circleMarker(
+                [36.2048, 138.2529],
+                {"bubblingMouseEvents": true, "color": "#7e4da4ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#7e4da4ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_cfd0b6ac22643942b990980437560a55 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f1eb11f245d6ddea405aaaefcf3ba155 = $(`<div id="html_f1eb11f245d6ddea405aaaefcf3ba155" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>JPN</b><br>                 Avg ADR: <b>£121</b><br>                 Bookings: <b>169</b>                 </div>                 </div>`)[0];
+                popup_cfd0b6ac22643942b990980437560a55.setContent(html_f1eb11f245d6ddea405aaaefcf3ba155);
+            
+        
+
+        circle_marker_9952c38c4cf7eaf0f957409af2d4c70b.bindPopup(popup_cfd0b6ac22643942b990980437560a55)
+        ;
+
+        
+    
+    
+            var circle_marker_be5bf546024d63f0c6321b646b8aa1f8 = L.circleMarker(
+                [35.9078, 127.7669],
+                {"bubblingMouseEvents": true, "color": "#2b8886ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#2b8886ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_6545a41e810ebdc6fec9680794881384 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_37227f05bed9b73e97dbe487146cc7f2 = $(`<div id="html_37227f05bed9b73e97dbe487146cc7f2" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>KOR</b><br>                 Avg ADR: <b>£107</b><br>                 Bookings: <b>78</b>                 </div>                 </div>`)[0];
+                popup_6545a41e810ebdc6fec9680794881384.setContent(html_37227f05bed9b73e97dbe487146cc7f2);
+            
+        
+
+        circle_marker_be5bf546024d63f0c6321b646b8aa1f8.bindPopup(popup_6545a41e810ebdc6fec9680794881384)
+        ;
+
+        
+    
+    
+            var circle_marker_e6b6bbce85559c664476f1a5b61c7c6b = L.circleMarker(
+                [31.7917, -7.0926],
+                {"bubblingMouseEvents": true, "color": "#4d53b0ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4d53b0ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_145f2cf9a0250819661ef2a0f7dba5e6 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_894edbc32c97ed4b2cc7201ba4358f9b = $(`<div id="html_894edbc32c97ed4b2cc7201ba4358f9b" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>MAR</b><br>                 Avg ADR: <b>£115</b><br>                 Bookings: <b>144</b>                 </div>                 </div>`)[0];
+                popup_145f2cf9a0250819661ef2a0f7dba5e6.setContent(html_894edbc32c97ed4b2cc7201ba4358f9b);
+            
+        
+
+        circle_marker_e6b6bbce85559c664476f1a5b61c7c6b.bindPopup(popup_145f2cf9a0250819661ef2a0f7dba5e6)
+        ;
+
+        
+    
+    
+            var circle_marker_563315f0bbb8b4aeea5a4467ad806560 = L.circleMarker(
+                [23.6345, -102.5528],
+                {"bubblingMouseEvents": true, "color": "#465da8ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#465da8ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_a3140fe1daa32a46941081568ae765bd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_144a5ff4513190f3ae0dd4c4c418b85f = $(`<div id="html_144a5ff4513190f3ae0dd4c4c418b85f" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>MEX</b><br>                 Avg ADR: <b>£113</b><br>                 Bookings: <b>72</b>                 </div>                 </div>`)[0];
+                popup_a3140fe1daa32a46941081568ae765bd.setContent(html_144a5ff4513190f3ae0dd4c4c418b85f);
+            
+        
+
+        circle_marker_563315f0bbb8b4aeea5a4467ad806560.bindPopup(popup_a3140fe1daa32a46941081568ae765bd)
+        ;
+
+        
+    
+    
+            var circle_marker_0ca109eb371266a9361625ce4992f1ca = L.circleMarker(
+                [52.1326, 5.2913],
+                {"bubblingMouseEvents": true, "color": "#22977bff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#22977bff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_1edc5754fae1196d8f9cfe08b485f780 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f93c5483384fc598471251a60877a357 = $(`<div id="html_f93c5483384fc598471251a60877a357" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>NLD</b><br>                 Avg ADR: <b>£105</b><br>                 Bookings: <b>1,708</b>                 </div>                 </div>`)[0];
+                popup_1edc5754fae1196d8f9cfe08b485f780.setContent(html_f93c5483384fc598471251a60877a357);
+            
+        
+
+        circle_marker_0ca109eb371266a9361625ce4992f1ca.bindPopup(popup_1edc5754fae1196d8f9cfe08b485f780)
+        ;
+
+        
+    
+    
+            var circle_marker_8cd8a71cf7498be20681b361b6747076 = L.circleMarker(
+                [60.472, 8.4689],
+                {"bubblingMouseEvents": true, "color": "#4f50b3ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4f50b3ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_9a01f2db351c9ca72461f014c656a88b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6043341bacdf8f3924e5fa70112c3738 = $(`<div id="html_6043341bacdf8f3924e5fa70112c3738" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>NOR</b><br>                 Avg ADR: <b>£115</b><br>                 Bookings: <b>421</b>                 </div>                 </div>`)[0];
+                popup_9a01f2db351c9ca72461f014c656a88b.setContent(html_6043341bacdf8f3924e5fa70112c3738);
+            
+        
+
+        circle_marker_8cd8a71cf7498be20681b361b6747076.bindPopup(popup_9a01f2db351c9ca72461f014c656a88b)
+        ;
+
+        
+    
+    
+            var circle_marker_6fa2b4689ad5a1e44861d76faa7777f5 = L.circleMarker(
+                [51.9194, 19.1451],
+                {"bubblingMouseEvents": true, "color": "#28a47cff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#28a47cff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_5a60a1d6372874e8359177b339f62613 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_45d2320b9224c6a732355217232d5d65 = $(`<div id="html_45d2320b9224c6a732355217232d5d65" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>POL</b><br>                 Avg ADR: <b>£102</b><br>                 Bookings: <b>695</b>                 </div>                 </div>`)[0];
+                popup_5a60a1d6372874e8359177b339f62613.setContent(html_45d2320b9224c6a732355217232d5d65);
+            
+        
+
+        circle_marker_6fa2b4689ad5a1e44861d76faa7777f5.bindPopup(popup_5a60a1d6372874e8359177b339f62613)
+        ;
+
+        
+    
+    
+            var circle_marker_1ffec5d69dd3cf51c958048f127239d5 = L.circleMarker(
+                [39.3999, -8.2245],
+                {"bubblingMouseEvents": true, "color": "#73cbaeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#73cbaeff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 30, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_ad15131e9649a19b763db2877ea0b0de = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_38ab681c6c33d7bee5ef43b362d38931 = $(`<div id="html_38ab681c6c33d7bee5ef43b362d38931" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>PRT</b><br>                 Avg ADR: <b>£95</b><br>                 Bookings: <b>19,563</b>                 </div>                 </div>`)[0];
+                popup_ad15131e9649a19b763db2877ea0b0de.setContent(html_38ab681c6c33d7bee5ef43b362d38931);
+            
+        
+
+        circle_marker_1ffec5d69dd3cf51c958048f127239d5.bindPopup(popup_ad15131e9649a19b763db2877ea0b0de)
+        ;
+
+        
+    
+    
+            var circle_marker_34528860081bbefefd02992c875ebff4 = L.circleMarker(
+                [45.9432, 24.9668],
+                {"bubblingMouseEvents": true, "color": "#4165a2ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4165a2ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_9df1b8d0ff954e112b101ba6398ddc5d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2cc67c637e925cf3407e10bac9e0b1de = $(`<div id="html_2cc67c637e925cf3407e10bac9e0b1de" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>ROU</b><br>                 Avg ADR: <b>£112</b><br>                 Bookings: <b>363</b>                 </div>                 </div>`)[0];
+                popup_9df1b8d0ff954e112b101ba6398ddc5d.setContent(html_2cc67c637e925cf3407e10bac9e0b1de);
+            
+        
+
+        circle_marker_34528860081bbefefd02992c875ebff4.bindPopup(popup_9df1b8d0ff954e112b101ba6398ddc5d)
+        ;
+
+        
+    
+    
+            var circle_marker_eac3f43b8870c2acbed3916f94c000a0 = L.circleMarker(
+                [61.524, 105.3188],
+                {"bubblingMouseEvents": true, "color": "#4461a5ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#4461a5ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_a72ac64c0a96d8fcfd1d4fd7756fd728 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fa4533447381922c0a7e4a303cf9b003 = $(`<div id="html_fa4533447381922c0a7e4a303cf9b003" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>RUS</b><br>                 Avg ADR: <b>£113</b><br>                 Bookings: <b>386</b>                 </div>                 </div>`)[0];
+                popup_a72ac64c0a96d8fcfd1d4fd7756fd728.setContent(html_fa4533447381922c0a7e4a303cf9b003);
+            
+        
+
+        circle_marker_eac3f43b8870c2acbed3916f94c000a0.bindPopup(popup_a72ac64c0a96d8fcfd1d4fd7756fd728)
+        ;
+
+        
+    
+    
+            var circle_marker_f2e5faa42d96ac31931d6c72817d0e3a = L.circleMarker(
+                [60.1282, 18.6435],
+                {"bubblingMouseEvents": true, "color": "#397298ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#397298ff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_dc6544400527c9d5361cb75bb4d2ce41 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_86439f090df3174c15df2fdb799bad96 = $(`<div id="html_86439f090df3174c15df2fdb799bad96" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>SWE</b><br>                 Avg ADR: <b>£110</b><br>                 Bookings: <b>787</b>                 </div>                 </div>`)[0];
+                popup_dc6544400527c9d5361cb75bb4d2ce41.setContent(html_86439f090df3174c15df2fdb799bad96);
+            
+        
+
+        circle_marker_f2e5faa42d96ac31931d6c72817d0e3a.bindPopup(popup_dc6544400527c9d5361cb75bb4d2ce41)
+        ;
+
+        
+    
+    
+            var circle_marker_3a745975bcc8eb302132a5ef5b31cf18 = L.circleMarker(
+                [38.9637, 35.2433],
+                {"bubblingMouseEvents": true, "color": "#21977aff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#21977aff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_6fb68d7dde7908f0b5b04115c8835162 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_41c837d9cf0e575fe1f15ef23e650de5 = $(`<div id="html_41c837d9cf0e575fe1f15ef23e650de5" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>TUR</b><br>                 Avg ADR: <b>£105</b><br>                 Bookings: <b>145</b>                 </div>                 </div>`)[0];
+                popup_6fb68d7dde7908f0b5b04115c8835162.setContent(html_41c837d9cf0e575fe1f15ef23e650de5);
+            
+        
+
+        circle_marker_3a745975bcc8eb302132a5ef5b31cf18.bindPopup(popup_6fb68d7dde7908f0b5b04115c8835162)
+        ;
+
+        
+    
+    
+            var circle_marker_cbe4db6000b25a37e0a972b25e8a08b8 = L.circleMarker(
+                [37.0902, -95.7129],
+                {"bubblingMouseEvents": true, "color": "#674baeff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#674baeff", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1.5}
+            ).addTo(map_f31b19d19297e180b3120add8496ab9e);
+        
+    
+        var popup_4994c4890861b7d7b3c4733260120f28 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c59b94007001fae40b00d9aac1b4f655 = $(`<div id="html_c59b94007001fae40b00d9aac1b4f655" style="width: 100.0%; height: 100.0%;">                 <div style='font-family:sans-serif; font-size:13px;'>                 <b>USA</b><br>                 Avg ADR: <b>£118</b><br>                 Bookings: <b>1,573</b>                 </div>                 </div>`)[0];
+                popup_4994c4890861b7d7b3c4733260120f28.setContent(html_c59b94007001fae40b00d9aac1b4f655);
+            
+        
+
+        circle_marker_cbe4db6000b25a37e0a972b25e8a08b8.bindPopup(popup_4994c4890861b7d7b3c4733260120f28)
+        ;
+
+        
+    
+    
+    var color_map_072305da66dc7e0584c949077d67cfd3 = {};
+
+    
+    color_map_072305da66dc7e0584c949077d67cfd3.color = d3.scale.threshold()
+              .domain([90.70441151919866, 90.78120519780319, 90.8579988764077, 90.93479255501224, 91.01158623361677, 91.08837991222128, 91.16517359082582, 91.24196726943033, 91.31876094803486, 91.3955546266394, 91.47234830524391, 91.54914198384844, 91.62593566245297, 91.70272934105749, 91.77952301966202, 91.85631669826655, 91.93311037687107, 92.0099040554756, 92.08669773408013, 92.16349141268465, 92.24028509128918, 92.3170787698937, 92.39387244849823, 92.47066612710276, 92.54745980570728, 92.62425348431181, 92.70104716291634, 92.77784084152086, 92.85463452012539, 92.93142819872992, 93.00822187733444, 93.08501555593897, 93.16180923454348, 93.23860291314801, 93.31539659175255, 93.39219027035706, 93.4689839489616, 93.54577762756612, 93.62257130617064, 93.69936498477517, 93.7761586633797, 93.85295234198422, 93.92974602058875, 94.00653969919327, 94.0833333777978, 94.16012705640233, 94.23692073500685, 94.31371441361138, 94.39050809221591, 94.46730177082043, 94.54409544942496, 94.62088912802949, 94.697682806634, 94.77447648523854, 94.85127016384307, 94.92806384244759, 95.00485752105212, 95.08165119965663, 95.15844487826116, 95.2352385568657, 95.31203223547021, 95.38882591407474, 95.46561959267927, 95.54241327128379, 95.61920694988832, 95.69600062849285, 95.77279430709737, 95.8495879857019, 95.92638166430642, 96.00317534291095, 96.07996902151548, 96.15676270012, 96.23355637872453, 96.31035005732906, 96.38714373593358, 96.46393741453811, 96.54073109314264, 96.61752477174716, 96.69431845035169, 96.77111212895622, 96.84790580756074, 96.92469948616527, 97.00149316476978, 97.07828684337431, 97.15508052197885, 97.23187420058336, 97.3086678791879, 97.38546155779242, 97.46225523639694, 97.53904891500147, 97.615842593606, 97.69263627221052, 97.76942995081505, 97.84622362941957, 97.9230173080241, 97.99981098662863, 98.07660466523315, 98.15339834383768, 98.23019202244221, 98.30698570104673, 98.38377937965126, 98.46057305825579, 98.5373667368603, 98.61416041546484, 98.69095409406935, 98.76774777267389, 98.84454145127842, 98.92133512988293, 98.99812880848746, 99.074922487092, 99.15171616569651, 99.22850984430104, 99.30530352290558, 99.38209720151009, 99.45889088011462, 99.53568455871914, 99.61247823732367, 99.6892719159282, 99.76606559453273, 99.84285927313725, 99.91965295174178, 99.9964466303463, 100.07324030895083, 100.15003398755536, 100.22682766615988, 100.30362134476441, 100.38041502336893, 100.45720870197346, 100.53400238057799, 100.6107960591825, 100.68758973778704, 100.76438341639157, 100.84117709499608, 100.91797077360062, 100.99476445220515, 101.07155813080966, 101.1483518094142, 101.22514548801873, 101.30193916662324, 101.37873284522777, 101.4555265238323, 101.53232020243682, 101.60911388104135, 101.68590755964587, 101.7627012382504, 101.83949491685493, 101.91628859545945, 101.99308227406398, 102.06987595266851, 102.14666963127303, 102.22346330987756, 102.30025698848209, 102.3770506670866, 102.45384434569114, 102.53063802429565, 102.60743170290019, 102.68422538150472, 102.76101906010923, 102.83781273871377, 102.9146064173183, 102.99140009592281, 103.06819377452734, 103.14498745313188, 103.22178113173639, 103.29857481034092, 103.37536848894544, 103.45216216754997, 103.5289558461545, 103.60574952475902, 103.68254320336355, 103.75933688196808, 103.8361305605726, 103.91292423917713, 103.98971791778166, 104.06651159638618, 104.14330527499071, 104.22009895359523, 104.29689263219976, 104.37368631080429, 104.45047998940882, 104.52727366801334, 104.60406734661787, 104.68086102522238, 104.75765470382692, 104.83444838243145, 104.91124206103596, 104.9880357396405, 105.06482941824501, 105.14162309684954, 105.21841677545407, 105.29521045405859, 105.37200413266312, 105.44879781126765, 105.52559148987217, 105.6023851684767, 105.67917884708123, 105.75597252568575, 105.83276620429028, 105.90955988289481, 105.98635356149933, 106.06314724010386, 106.13994091870839, 106.21673459731291, 106.29352827591744, 106.37032195452196, 106.44711563312649, 106.52390931173102, 106.60070299033553, 106.67749666894007, 106.75429034754458, 106.83108402614911, 106.90787770475364, 106.98467138335818, 107.06146506196269, 107.13825874056722, 107.21505241917174, 107.29184609777627, 107.3686397763808, 107.44543345498532, 107.52222713358985, 107.59902081219437, 107.6758144907989, 107.75260816940343, 107.82940184800796, 107.90619552661248, 107.98298920521701, 108.05978288382153, 108.13657656242606, 108.21337024103059, 108.2901639196351, 108.36695759823964, 108.44375127684417, 108.52054495544868, 108.59733863405322, 108.67413231265775, 108.75092599126226, 108.8277196698668, 108.90451334847133, 108.98130702707584, 109.05810070568037, 109.1348943842849, 109.21168806288942, 109.28848174149395, 109.36527542009847, 109.442069098703, 109.51886277730753, 109.59565645591205, 109.67245013451658, 109.7492438131211, 109.82603749172563, 109.90283117033016, 109.97962484893469, 110.05641852753921, 110.13321220614374, 110.21000588474826, 110.28679956335279, 110.36359324195732, 110.44038692056185, 110.51718059916637, 110.59397427777088, 110.67076795637541, 110.74756163497995, 110.82435531358448, 110.901148992189, 110.97794267079352, 111.05473634939804, 111.13153002800257, 111.2083237066071, 111.28511738521162, 111.36191106381615, 111.43870474242067, 111.5154984210252, 111.59229209962973, 111.66908577823426, 111.74587945683878, 111.82267313544331, 111.89946681404783, 111.97626049265236, 112.05305417125689, 112.1298478498614, 112.20664152846594, 112.28343520707045, 112.36022888567499, 112.43702256427952, 112.51381624288405, 112.59060992148856, 112.6674036000931, 112.74419727869761, 112.82099095730214, 112.89778463590667, 112.97457831451119, 113.05137199311572, 113.12816567172025, 113.20495935032477, 113.2817530289293, 113.35854670753383, 113.43534038613835, 113.51213406474288, 113.5889277433474, 113.66572142195193, 113.74251510055646, 113.81930877916099, 113.89610245776551, 113.97289613637004, 114.04968981497456, 114.12648349357909, 114.20327717218362, 114.28007085078814, 114.35686452939267, 114.43365820799718, 114.51045188660171, 114.58724556520625, 114.66403924381078, 114.7408329224153, 114.81762660101982, 114.89442027962434, 114.97121395822887, 115.0480076368334, 115.12480131543792, 115.20159499404245, 115.27838867264697, 115.3551823512515, 115.43197602985603, 115.50876970846056, 115.58556338706508, 115.66235706566961, 115.73915074427413, 115.81594442287866, 115.89273810148319, 115.9695317800877, 116.04632545869224, 116.12311913729675, 116.19991281590129, 116.27670649450582, 116.35350017311035, 116.43029385171486, 116.5070875303194, 116.58388120892391, 116.66067488752844, 116.73746856613297, 116.81426224473749, 116.89105592334202, 116.96784960194654, 117.04464328055107, 117.1214369591556, 117.19823063776013, 117.27502431636465, 117.35181799496918, 117.4286116735737, 117.50540535217823, 117.58219903078276, 117.65899270938728, 117.73578638799181, 117.81258006659634, 117.88937374520086, 117.96616742380539, 118.04296110240992, 118.11975478101444, 118.19654845961897, 118.27334213822348, 118.35013581682801, 118.42692949543255, 118.50372317403708, 118.5805168526416, 118.65731053124613, 118.73410420985064, 118.81089788845517, 118.8876915670597, 118.96448524566424, 119.04127892426875, 119.11807260287327, 119.1948662814778, 119.27165996008233, 119.34845363868686, 119.42524731729138, 119.50204099589591, 119.57883467450043, 119.65562835310496, 119.73242203170949, 119.809215710314, 119.88600938891854, 119.96280306752305, 120.03959674612759, 120.11639042473212, 120.19318410333665, 120.26997778194117, 120.3467714605457, 120.42356513915021, 120.50035881775474, 120.57715249635928, 120.65394617496379, 120.73073985356832, 120.80753353217284, 120.88432721077737, 120.9611208893819, 121.03791456798643, 121.11470824659095, 121.19150192519548, 121.2682956038, 121.34508928240453, 121.42188296100906, 121.49867663961358, 121.57547031821811, 121.65226399682263, 121.72905767542716, 121.80585135403169, 121.88264503263622, 121.95943871124074, 122.03623238984527, 122.11302606844978, 122.18981974705432, 122.26661342565885, 122.34340710426336, 122.4202007828679, 122.49699446147243, 122.57378814007694, 122.65058181868147, 122.727375497286, 122.80416917589052, 122.88096285449505, 122.95775653309957, 123.0345502117041, 123.11134389030863, 123.18813756891316, 123.26493124751768, 123.3417249261222, 123.41851860472673, 123.49531228333126, 123.57210596193579, 123.64889964054031, 123.72569331914484, 123.80248699774936, 123.87928067635389, 123.95607435495842, 124.03286803356293, 124.10966171216747, 124.18645539077198, 124.26324906937651, 124.34004274798104, 124.41683642658558, 124.49363010519009, 124.57042378379462, 124.64721746239914, 124.72401114100367, 124.8008048196082, 124.87759849821273, 124.95439217681725, 125.03118585542177, 125.1079795340263, 125.18477321263083, 125.26156689123536, 125.33836056983988, 125.41515424844441, 125.49194792704893, 125.56874160565346, 125.64553528425799, 125.72232896286252, 125.79912264146704, 125.87591632007155, 125.95270999867608, 126.02950367728062, 126.10629735588515, 126.18309103448968, 126.2598847130942, 126.33667839169871, 126.41347207030324, 126.49026574890777, 126.5670594275123, 126.64385310611684, 126.72064678472134, 126.79744046332587, 126.8742341419304, 126.95102782053493, 127.02782149913946, 127.104615177744, 127.1814088563485, 127.25820253495303, 127.33499621355756, 127.41178989216209, 127.48858357076662, 127.56537724937114, 127.64217092797566, 127.71896460658019, 127.79575828518472, 127.87255196378925, 127.94934564239377, 128.02613932099828, 128.1029329996028, 128.17972667820735, 128.25652035681188, 128.3333140354164, 128.4101077140209, 128.48690139262544, 128.56369507122997, 128.6404887498345, 128.71728242843903, 128.79407610704357, 128.8708697856481, 128.9476634642526, 129.02445714285713])
+              .range(['#9fe1cbff', '#9ee1cbff', '#9ee1caff', '#9de0caff', '#9ce0c9ff', '#9bdfc9ff', '#9adfc8ff', '#9adfc8ff', '#99dec7ff', '#98dec7ff', '#97ddc6ff', '#96ddc6ff', '#96ddc5ff', '#95dcc5ff', '#94dcc4ff', '#93dbc4ff', '#93dbc3ff', '#92dbc2ff', '#91dac2ff', '#90dac1ff', '#8fd9c1ff', '#8fd9c0ff', '#8ed8c0ff', '#8dd8bfff', '#8cd8bfff', '#8cd7beff', '#8bd7beff', '#8ad6bdff', '#89d6bdff', '#88d6bcff', '#88d5bcff', '#87d5bbff', '#86d4bbff', '#85d4baff', '#84d4baff', '#84d3b9ff', '#83d3b9ff', '#82d2b8ff', '#81d2b8ff', '#81d2b7ff', '#80d1b7ff', '#7fd1b6ff', '#7ed0b5ff', '#7dd0b5ff', '#7dd0b4ff', '#7ccfb4ff', '#7bcfb3ff', '#7aceb3ff', '#79ceb2ff', '#79ceb2ff', '#78cdb1ff', '#77cdb1ff', '#76ccb0ff', '#76ccb0ff', '#75ccafff', '#74cbafff', '#73cbaeff', '#72caaeff', '#72caadff', '#71caadff', '#70c9acff', '#6fc9acff', '#6ec8abff', '#6ec8abff', '#6dc8aaff', '#6cc7aaff', '#6bc7a9ff', '#6bc6a9ff', '#6ac6a8ff', '#69c5a7ff', '#68c5a7ff', '#67c5a6ff', '#67c4a6ff', '#66c4a5ff', '#65c3a5ff', '#64c3a4ff', '#63c3a4ff', '#63c2a3ff', '#62c2a3ff', '#61c1a2ff', '#60c1a2ff', '#60c1a1ff', '#5fc0a1ff', '#5ec0a0ff', '#5dbfa0ff', '#5cbf9fff', '#5cbf9fff', '#5bbe9eff', '#5abe9eff', '#59bd9dff', '#59bd9dff', '#58bd9cff', '#57bc9cff', '#56bc9bff', '#55bb9bff', '#55bb9aff', '#54bb99ff', '#53ba99ff', '#52ba98ff', '#51b998ff', '#51b997ff', '#50b997ff', '#4fb896ff', '#4eb896ff', '#4eb795ff', '#4db795ff', '#4cb794ff', '#4bb694ff', '#4ab693ff', '#4ab593ff', '#49b592ff', '#48b492ff', '#47b491ff', '#46b491ff', '#46b390ff', '#45b390ff', '#44b28fff', '#43b28fff', '#43b28eff', '#42b18eff', '#41b18dff', '#40b08cff', '#3fb08cff', '#3fb08bff', '#3eaf8bff', '#3daf8aff', '#3cae8aff', '#3bae89ff', '#3bae89ff', '#3aad88ff', '#39ad88ff', '#38ac87ff', '#38ac87ff', '#37ac86ff', '#36ab86ff', '#35ab85ff', '#34aa85ff', '#34aa84ff', '#33aa84ff', '#32a983ff', '#31a983ff', '#30a882ff', '#30a882ff', '#2fa881ff', '#2ea781ff', '#2da780ff', '#2da680ff', '#2ca67fff', '#2ba67eff', '#2aa57eff', '#29a57dff', '#29a47dff', '#28a47cff', '#27a47cff', '#26a37bff', '#26a37bff', '#25a27aff', '#24a27aff', '#23a179ff', '#22a179ff', '#22a178ff', '#21a078ff', '#20a077ff', '#1f9f77ff', '#1e9f76ff', '#1e9f76ff', '#1d9e75ff', '#1d9e75ff', '#1d9d76ff', '#1d9d76ff', '#1e9c76ff', '#1e9c77ff', '#1e9b77ff', '#1f9b78ff', '#1f9a78ff', '#1f9a78ff', '#209979ff', '#209979ff', '#20987aff', '#21987aff', '#21977aff', '#21977bff', '#22967bff', '#22967cff', '#22957cff', '#23957cff', '#23947dff', '#23947dff', '#24937eff', '#24937eff', '#24927eff', '#25927fff', '#25917fff', '#259180ff', '#269080ff', '#269080ff', '#268f81ff', '#278f81ff', '#278e82ff', '#278e82ff', '#288d82ff', '#288d83ff', '#288c83ff', '#298c84ff', '#298b84ff', '#298b84ff', '#2a8a85ff', '#2a8a85ff', '#2a8986ff', '#2b8886ff', '#2b8886ff', '#2b8787ff', '#2b8787ff', '#2c8688ff', '#2c8688ff', '#2c8588ff', '#2d8589ff', '#2d8489ff', '#2d848aff', '#2e838aff', '#2e838aff', '#2e828bff', '#2f828bff', '#2f818cff', '#2f818cff', '#30808cff', '#30808dff', '#307f8dff', '#317f8eff', '#317e8eff', '#317e8eff', '#327d8fff', '#327d8fff', '#327c90ff', '#337c90ff', '#337b90ff', '#337b91ff', '#347a91ff', '#347a92ff', '#347992ff', '#357992ff', '#357893ff', '#357893ff', '#367793ff', '#367794ff', '#367694ff', '#377695ff', '#377595ff', '#377595ff', '#387496ff', '#387496ff', '#387397ff', '#397397ff', '#397297ff', '#397298ff', '#3a7198ff', '#3a7199ff', '#3a7099ff', '#3a7099ff', '#3b6f9aff', '#3b6f9aff', '#3b6e9bff', '#3c6e9bff', '#3c6d9bff', '#3c6d9cff', '#3d6c9cff', '#3d6c9dff', '#3d6b9dff', '#3e6b9dff', '#3e6a9eff', '#3e6a9eff', '#3f699fff', '#3f699fff', '#3f689fff', '#4068a0ff', '#4067a0ff', '#4067a1ff', '#4166a1ff', '#4166a1ff', '#4165a2ff', '#4264a2ff', '#4264a3ff', '#4263a3ff', '#4363a3ff', '#4362a4ff', '#4362a4ff', '#4461a5ff', '#4461a5ff', '#4460a5ff', '#4560a6ff', '#455fa6ff', '#455fa7ff', '#465ea7ff', '#465ea7ff', '#465da8ff', '#475da8ff', '#475ca9ff', '#475ca9ff', '#485ba9ff', '#485baaff', '#485aaaff', '#495aabff', '#4959abff', '#4959abff', '#4958acff', '#4a58acff', '#4a57adff', '#4a57adff', '#4b56adff', '#4b56aeff', '#4b55aeff', '#4c55afff', '#4c54afff', '#4c54afff', '#4d53b0ff', '#4d53b0ff', '#4d52b1ff', '#4e52b1ff', '#4e51b1ff', '#4e51b2ff', '#4f50b2ff', '#4f50b3ff', '#4f4fb3ff', '#504fb3ff', '#504eb4ff', '#504eb4ff', '#514db5ff', '#514db5ff', '#514cb5ff', '#524cb6ff', '#524bb6ff', '#524bb7ff', '#534ab7ff', '#534ab7ff', '#544ab7ff', '#554ab6ff', '#554ab6ff', '#564ab6ff', '#574ab5ff', '#584ab5ff', '#594ab5ff', '#594ab4ff', '#5a4ab4ff', '#5b4ab4ff', '#5c4ab3ff', '#5c4ab3ff', '#5d4bb3ff', '#5e4bb2ff', '#5f4bb2ff', '#604bb2ff', '#604bb1ff', '#614bb1ff', '#624bb1ff', '#634bb0ff', '#634bb0ff', '#644bb0ff', '#654bafff', '#664bafff', '#674bafff', '#674baeff', '#684baeff', '#694badff', '#6a4badff', '#6a4badff', '#6b4bacff', '#6c4cacff', '#6d4cacff', '#6e4cabff', '#6e4cabff', '#6f4cabff', '#704caaff', '#714caaff', '#714caaff', '#724ca9ff', '#734ca9ff', '#744ca9ff', '#754ca8ff', '#754ca8ff', '#764ca8ff', '#774ca7ff', '#784ca7ff', '#784ca7ff', '#794ca6ff', '#7a4da6ff', '#7b4da6ff', '#7c4da5ff', '#7c4da5ff', '#7d4da5ff', '#7e4da4ff', '#7f4da4ff', '#7f4da3ff', '#804da3ff', '#814da3ff', '#824da2ff', '#834da2ff', '#834da2ff', '#844da1ff', '#854da1ff', '#864da1ff', '#864da0ff', '#874da0ff', '#884ea0ff', '#894e9fff', '#8a4e9fff', '#8a4e9fff', '#8b4e9eff', '#8c4e9eff', '#8d4e9eff', '#8d4e9dff', '#8e4e9dff', '#8f4e9dff', '#904e9cff', '#914e9cff', '#914e9cff', '#924e9bff', '#934e9bff', '#944e9bff', '#944e9aff', '#954e9aff', '#964e9aff', '#974f99ff', '#984f99ff', '#984f98ff', '#994f98ff', '#9a4f98ff', '#9b4f97ff', '#9b4f97ff', '#9c4f97ff', '#9d4f96ff', '#9e4f96ff', '#9f4f96ff', '#9f4f95ff', '#a04f95ff', '#a14f95ff', '#a24f94ff', '#a34f94ff', '#a34f94ff', '#a44f93ff', '#a55093ff', '#a65093ff', '#a65092ff', '#a75092ff', '#a85092ff', '#a95091ff', '#aa5091ff', '#aa5091ff', '#ab5090ff', '#ac5090ff', '#ad5090ff', '#ad508fff', '#ae508fff', '#af508fff', '#b0508eff', '#b1508eff', '#b1508dff', '#b2508dff', '#b3508dff', '#b4518cff', '#b4518cff', '#b5518cff', '#b6518bff', '#b7518bff', '#b8518bff', '#b8518aff', '#b9518aff', '#ba518aff', '#bb5189ff', '#bb5189ff', '#bc5189ff', '#bd5188ff', '#be5188ff', '#bf5188ff', '#bf5187ff', '#c05187ff', '#c15187ff', '#c25286ff', '#c25286ff', '#c35286ff', '#c45285ff', '#c55285ff', '#c65285ff', '#c65284ff', '#c75284ff', '#c85283ff', '#c95283ff', '#c95283ff', '#ca5282ff', '#cb5282ff', '#cc5282ff', '#cd5281ff', '#cd5281ff', '#ce5281ff', '#cf5280ff', '#d05280ff', '#d05380ff', '#d1537fff', '#d2537fff', '#d3537fff', '#d4537eff', '#d4537eff']);
+    
+
+    color_map_072305da66dc7e0584c949077d67cfd3.x = d3.scale.linear()
+              .domain([90.70441151919866, 129.02445714285713])
+              .range([0, 450 - 50]);
+
+    color_map_072305da66dc7e0584c949077d67cfd3.legend = L.control({position: 'topright'});
+    color_map_072305da66dc7e0584c949077d67cfd3.legend.onAdd = function (map) {var div = L.DomUtil.create('div', 'legend'); return div};
+    color_map_072305da66dc7e0584c949077d67cfd3.legend.addTo(map_f31b19d19297e180b3120add8496ab9e);
+
+    color_map_072305da66dc7e0584c949077d67cfd3.xAxis = d3.svg.axis()
+        .scale(color_map_072305da66dc7e0584c949077d67cfd3.x)
+        .orient("top")
+        .tickSize(1)
+        .tickValues([90.70441151919866, 103.47776006041815, 116.25110860163764, 129.02445714285713]);
+
+    color_map_072305da66dc7e0584c949077d67cfd3.svg = d3.select(".legend.leaflet-control").append("svg")
+        .attr("id", 'legend')
+        .attr("width", 450)
+        .attr("height", 40);
+
+    color_map_072305da66dc7e0584c949077d67cfd3.g = color_map_072305da66dc7e0584c949077d67cfd3.svg.append("g")
+        .attr("class", "key")
+        .attr("fill", "black")
+        .attr("transform", "translate(25,16)");
+
+    color_map_072305da66dc7e0584c949077d67cfd3.g.selectAll("rect")
+        .data(color_map_072305da66dc7e0584c949077d67cfd3.color.range().map(function(d, i) {
+          return {
+            x0: i ? color_map_072305da66dc7e0584c949077d67cfd3.x(color_map_072305da66dc7e0584c949077d67cfd3.color.domain()[i - 1]) : color_map_072305da66dc7e0584c949077d67cfd3.x.range()[0],
+            x1: i < color_map_072305da66dc7e0584c949077d67cfd3.color.domain().length ? color_map_072305da66dc7e0584c949077d67cfd3.x(color_map_072305da66dc7e0584c949077d67cfd3.color.domain()[i]) : color_map_072305da66dc7e0584c949077d67cfd3.x.range()[1],
+            z: d
+          };
+        }))
+      .enter().append("rect")
+        .attr("height", 40 - 30)
+        .attr("x", function(d) { return d.x0; })
+        .attr("width", function(d) { return d.x1 - d.x0; })
+        .style("fill", function(d) { return d.z; });
+
+    color_map_072305da66dc7e0584c949077d67cfd3.g.call(color_map_072305da66dc7e0584c949077d67cfd3.xAxis).append("text")
+        .attr("class", "caption")
+        .attr("y", 21)
+        .attr("fill", "black")
+        .text("Average Daily Rate (\u00a3)");
+</script>
+</html>
